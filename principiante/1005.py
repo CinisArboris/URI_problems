@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
-A = float(5.0)
-B = float(7.1)
-MEDIA = '%.5f' % (  10-((A/2)+(B/2))/2  )
+A = float(7.1)
+B = float(0.0)
+C = (A) + (B)
+D = C /
+MEDIA = '%.5f' % ( D )
 print ('MEDIA = ' + str(MEDIA))
     
