@@ -1,0 +1,5 @@
+SELECT products.name, providers.name
+FROM products, providers, categories
+WHERE categories.id = products.id_categories AND
+providers.id = products.id_providers AND
+categories.name = 'executive';
