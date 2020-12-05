@@ -1,0 +1,5 @@
+SELECT cu.name, re.rentals_date
+FROM customers cu, rentals re
+WHERE cu.id = re.id_customers AND 
+EXTRACT( YEAR FROM re.rentals_date) = '2016' AND
+EXTRACT (MONTH FROM re.rentals_date) = '09';
