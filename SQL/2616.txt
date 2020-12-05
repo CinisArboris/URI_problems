@@ -1,0 +1,6 @@
+SELECT cu.id, cu.name
+FROM customers cu
+WHERE cu.id NOT IN (
+		SELECT lo.id_customers
+		FROM locations lo
+	);
