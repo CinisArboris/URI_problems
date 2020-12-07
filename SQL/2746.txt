@@ -1,0 +1,1 @@
+select  REPLACE(vi.name, 'H1', 'X') from virus vi;
