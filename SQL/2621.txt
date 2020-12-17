@@ -1,0 +1,6 @@
+SELECT pd."name"
+FROM providers pv, products pd
+WHERE pd."amount" > 10 AND
+pd."amount" < 20 AND
+pv.id = pd.id_providers and
+pv."name" LIKE 'P%';

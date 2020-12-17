@@ -1,0 +1,8 @@
+SELECT
+CONCAT(
+SUBSTRING(np.cpf,0,4), '.',
+SUBSTRING(np.cpf,4,3), '.',
+SUBSTRING(np.cpf,7,3), '-',
+SUBSTRING(np.cpf,10,2)
+) AS "CPF"
+FROM natural_person np
