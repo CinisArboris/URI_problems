@@ -1,0 +1,4 @@
+SELECT cu.name, od.id
+FROM customers cu, orders od
+WHERE cu.id = od.id_customers AND
+EXTRACT (MONTH FROM (od.orders_date)) <= 6;

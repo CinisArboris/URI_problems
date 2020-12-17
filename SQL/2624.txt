@@ -1,0 +1,2 @@
+SELECT COUNT(DISTINCT (cu.city))
+FROM customers cu;

@@ -1,0 +1,4 @@
+SELECT mo.id, mo.name
+FROM movies mo, prices pr
+WHERE mo.id_prices = pr.id AND
+pr.value < 2.00;

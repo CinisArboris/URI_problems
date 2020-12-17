@@ -1,0 +1,23 @@
+(
+SELECT la.name, la.customers_number
+FROM lawyers la
+order by (la.customers_number) DESC
+LIMIT 1
+)
+
+UNION ALL
+
+(
+SELECT la.name, la.customers_number
+FROM lawyers la
+order by (la.customers_number) asc
+LIMIT 1
+)
+
+UNION ALL
+
+(
+SELECT 'Average' AS NAME,
+cast(avg(la.customers_number) AS int)
+FROM lawyers la
+)

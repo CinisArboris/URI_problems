@@ -1,0 +1,3 @@
+SELECT cu.city
+FROM customers cu
+GROUP BY cu.city;

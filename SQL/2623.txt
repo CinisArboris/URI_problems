@@ -1,0 +1,12 @@
+SELECT distinct pd."name", ct."name"
+FROM products pd, categories ct
+WHERE
+ct.id = pd.id_categories and
+(
+ct.id = 1 or
+ct.id = 2 or
+ct.id = 3 or
+ct.id = 6 or
+ct.id = 9
+) AND
+pd.amount >= 100;
